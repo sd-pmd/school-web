@@ -1,0 +1,11 @@
+[build]
+command = "npm run build"
+cwd = "school-web"
+destination = ".next/static"
+
+[env.production]
+vars = { NEXT_PUBLIC_ENVIRONMENT = "production" }
+
+[[routes]]
+pattern = "/*"
+status = 404
